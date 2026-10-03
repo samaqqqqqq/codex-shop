@@ -39,7 +39,7 @@ const visibleTasks = computed(() => tasks.value.filter((task) => {
   if (activeFilter.value === 'completed') return task.done
   return true
 }))
-const listTitle = computed(() => activeFilter.value === 'all' ? '今天的待辦' : labels[activeFilter.value])
+const listTitle = computed(() => activeFilter.value === 'all' ? '今天的待辦事項' : labels[activeFilter.value])
 const listHint = computed(() => activeFilter.value === 'completed' ? '每一步都值得記得' : '照自己的步調就好')
 const emptyTitle = computed(() => activeFilter.value === 'completed' ? '完成的事情會在這裡' : '清單還是空的')
 const emptyNote = computed(() => activeFilter.value === 'completed'
